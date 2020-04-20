@@ -5,6 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:android_alarm_manager/android_alarm_manager.dart';
 
 void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
   final int helloAlarmID = 007;
   final int oneShotID = 1;
 

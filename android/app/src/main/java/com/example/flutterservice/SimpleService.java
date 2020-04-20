@@ -1,4 +1,4 @@
-package com.example.services_demo;
+package com.example.flutterservice;
 
 import android.app.Service;
 import android.content.Intent;
