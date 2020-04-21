@@ -14,15 +14,16 @@ void main() async {
   await AndroidAlarmManager.initialize();
   runApp(MyApp());
 
-  await AndroidAlarmManager.periodic(
-    const Duration(seconds: 15),
-    helloAlarmID,
-    printMultiple,
-    exact: true,
-  );
+//  await AndroidAlarmManager.periodic(
+//    const Duration(seconds: 15),
+//    helloAlarmID,
+//    printMultiple,
+//    exact: true,
+//  );
 
-  await AndroidAlarmManager.oneShot(
-    const Duration(seconds: 5),
+  await AndroidAlarmManager.oneShotAt(
+    new DateTime(2020, 4, 21, 11, 5, 0, 0, 0),
+    //const Duration(seconds: 5),
     oneShotID,
     printOnce,
   );
