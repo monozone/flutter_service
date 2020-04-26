@@ -15,7 +15,7 @@ void main() async {
   runApp(MyApp());
 
   await AndroidAlarmManager.periodic(
-    const Duration(hours: 4),
+    const Duration(seconds: 4),
     helloAlarmID,
     printMultiple,
     exact: true,
