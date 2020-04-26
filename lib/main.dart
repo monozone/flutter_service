@@ -14,12 +14,12 @@ void main() async {
   await AndroidAlarmManager.initialize();
   runApp(MyApp());
 
-//  await AndroidAlarmManager.periodic(
-//    const Duration(seconds: 15),
-//    helloAlarmID,
-//    printMultiple,
-//    exact: true,
-//  );
+  await AndroidAlarmManager.periodic(
+    const Duration(hours: 4),
+    helloAlarmID,
+    printMultiple,
+    exact: true,
+  );
 
   await AndroidAlarmManager.oneShotAt(
     new DateTime(2020, 4, 21, 11, 5, 0, 0, 0),
